@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-06 18:29:27.475137",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "website_name",
+  "website_owner",
+  "column_break_glhc",
+  "domain",
+  "logo"
+ ],
+ "fields": [
+  {
+   "fieldname": "website_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Website Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "website_owner",
+   "fieldtype": "Data",
+   "label": "Website Owner"
+  },
+  {
+   "fieldname": "column_break_glhc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "domain",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Domain",
+   "reqd": 1
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-06 18:32:25.430953",
+ "modified_by": "Administrator",
+ "module": "Juman",
+ "name": "Websites",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
