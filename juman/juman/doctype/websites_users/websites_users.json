@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{user}-{domain}",
  "creation": "2025-08-06 18:33:18.651302",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,23 +13,28 @@
   {
    "fieldname": "user",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "User",
-   "options": "User"
+   "options": "User",
+   "reqd": 1
   },
   {
    "fieldname": "website",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Website",
-   "options": "Websites"
+   "options": "Websites",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-06 18:34:01.059176",
+ "modified": "2025-08-07 01:02:58.962259",
  "modified_by": "Administrator",
  "module": "Juman",
  "name": "Websites Users",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

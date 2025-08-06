@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{website_name}-{domain}",
  "creation": "2025-08-06 18:29:27.475137",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -33,7 +34,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Domain",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "logo",
@@ -44,10 +46,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-06 18:32:25.430953",
+ "modified": "2025-08-07 01:04:02.605362",
  "modified_by": "Administrator",
  "module": "Juman",
  "name": "Websites",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

@@ -177,9 +177,12 @@ app_license = "mit"
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "juman.event.get_events"
 # }
+
+# http://192.168.1.46:8006/api/method/frappe.integrations.oauth2_logins.login_via_frappe
 override_whitelisted_methods = {
 	# "frappe.www.login.login_via_frappe": "frappe.integrations.oauth2_logins.login_via_frappe"
-    "frappe.www.login.login_via_frappe": "juman.api.login_via_frappe"
+    # "frappe.integrations.oauth2_logins.login_via_frappe": "juman.api.login_via_frappe"
+    "frappe.integrations.oauth2.authorize": "juman.api.authorize"
 }
 #
 # each overriding function accepts a `data` argument;
