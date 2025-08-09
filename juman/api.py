@@ -158,7 +158,8 @@ def authorize(**kwargs):
                     website_doc.insert(ignore_permissions=True)
                     website_doc_name = website_doc.name
                     frappe.db.commit()
-
+                print("///////////////////////////////////////////////")
+                print(f"The website_doc_name is: {website_doc_name}")
                 # Check and create Websites Users record if it doesn't exist
                 website_user_exists = frappe.db.exists(
                     "Websites Users",
@@ -174,6 +175,6 @@ def authorize(**kwargs):
                     website_user_doc.website = website_doc_name
                     website_user_doc.insert(ignore_permissions=True)
                     frappe.db.commit()
-
+                print("///////////////////////////////////////////////")
         except (FatalClientError, OAuth2Error) as e:
             return generate_json_error_response(e)
